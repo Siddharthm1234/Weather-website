@@ -14,8 +14,8 @@ const forecast = (lat, long, callback) => {
         }
         else{
             callback(undefined, `The weather at ${response.body.location.name}, ${response.body.location.country} is ${response.body.current.condition.text}.
-The temperature in celcium is ${response.body.current.temp_c}.
-The temperature in farenhiet is ${response.body.current.temp_f}.`);
+The temperature in celcius is ${response.body.current.temp_c}.
+The temperature in farenheit is ${response.body.current.temp_f}.`);
         }  
     })
 }
